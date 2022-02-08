@@ -1,4 +1,5 @@
 from pathlib import Path
+from skyfield.api import load
 from logzero import logger, logfile
 from sense_hat import SenseHat
 from picamera import PiCamera
@@ -53,6 +54,10 @@ def capture(camera, image):
 
 base_folder = Path(__file__).parent.resolve()
 
+# ephemeris initialization
+ephemeris = load('de421.bsp')
+timescale = load.timescale()
+
 # Set a logfile name
 logfile(base_folder/"events.log")
 
@@ -75,6 +80,11 @@ now_time = datetime.now()
 # Run a loop for (almost) three hours
 while (now_time < start_time + timedelta(minutes=178)):
     try:
+        t = timescale.now()
+        if ISS.at(t).is_sunlit(ephemeris):
+            print("In sunlight")
+        else:
+            print("In darkness")
         humidity = round(sense.humidity, 4)
         temperature = round(sense.temperature, 4)
         # Get coordinates of location on Earth below the ISS
