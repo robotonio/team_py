@@ -1,6 +1,6 @@
 # team_py
 
-The project is divided into two parts, the *ISS* and the Cloud Analysis.
+The project is divided into two parts, the <ISS> and the Cloud Analysis.
 
 ## ISS
 In the first part, there is the material that was sent for the third phase of the competition, ie the program and the accompanying files that will be run on the ISS for the data collection.
