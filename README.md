@@ -56,7 +56,7 @@ But why is the systematic study of this phenomenon important? Knowing that some 
 
 
 
-## Repository Struct
+## Repository Struction
 The project is divided into two parts, the ISS and the Cloud Analysis.
 
 ### ISS
