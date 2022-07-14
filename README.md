@@ -32,6 +32,7 @@ In the first stage of our experiment, we used coral to classify the images into 
 ![Figure 1: cloud classes](https://github.com/robotonio/team_py/blob/main/assets/figure_2.png) 
 
 Figure 1: cloud classes
+
 Afterwards a detailed measurement of the percentage of clouds in each image took place, for each category separately, with computer vision techniques and more specifically with the k-means algorithm, with a coefficient K = 8, which emerged as the most appropriate after many experiments. The purpose of this action is to calculate the exact percentage of clouds in each category, as the images classified during the previous stage were not covered by clouds at a rate of 100%.
  
 Figure 2: Clouds Classification with Coral
