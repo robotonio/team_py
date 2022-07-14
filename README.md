@@ -12,6 +12,9 @@ We tried to:
 •	Compare our results with past results and
 •	Study the distribution of the different cloud categories and how it affects the evolution of the phenomenon of climate change. 
 
+![Blankets-Parasols](https://github.com/robotonio/team_py/blob/main/assets/figure_1.png) 
+
+
 ## 2. Method  
 Here is the technical part. But primarily, we must talk about the Hardware. Obviously, we used a Raspberry Pi. The only sensors we used were the camera. 
 The type of data we wanted was:
@@ -34,12 +37,17 @@ In the first stage of our experiment, we used coral to classify the images into 
 Figure 1: cloud classes
 
 Afterwards a detailed measurement of the percentage of clouds in each image took place, for each category separately, with computer vision techniques and more specifically with the k-means algorithm, with a coefficient K = 8, which emerged as the most appropriate after many experiments. The purpose of this action is to calculate the exact percentage of clouds in each category, as the images classified during the previous stage were not covered by clouds at a rate of 100%.
- 
+
+![Figure 2: Clouds Classification with Coral](https://github.com/robotonio/team_py/blob/main/assets/figure_3.png) 
+
 Figure 2: Clouds Classification with Coral
+
 The results of the analysis are shown in Figure 2. In this phase, the images of the "none" class were completely ignored, as the measurement of zero or exceedingly small percentages of clouds, to measure the differences between different time snapshots, we used as samples the photos we collected with our experiment in the 3rd phase of the competition, as well as those provided by the Astro Pi team at the beginning of 2022. For model training, initially we separated some of the images in the classes "none", "blankets" & "parasols", as shown in Figure 1. of undefined class, would not add useful information.
 
+![Figure 3: Detailed cloud classification with K-mean algorithm](https://github.com/robotonio/team_py/blob/main/assets/figure_4.png) 
  
 Figure 3: Detailed cloud classification with K-mean algorithm
+
 As shown in both graphs above, the percentage of clouds in the "blanket" class prevails to a much higher percentage, which is increased in the second analysis. The distribution of clouds does not change significantly in the two different samples (after all, they are not far apart in time), which we believe is due to some random factors, as the photographs used come from a random and small percentage of our planet's surface.
 
 
