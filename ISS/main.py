@@ -5,7 +5,7 @@ Country: Greece
 School: ROBOTONIO
 Mentor: Tassos Kasmiris
 Students:
-    Tasos Makrosterios
+    Tasos Makrostergios
     Andreas Tsounias
     George Tsaligopoulos
     Chris Megagiannis
